@@ -11,10 +11,12 @@ import numpy as np
 import os
 import pprint
 import matplotlib.pyplot as plt
+import rlcompleter, readline
 
 # Setup environment
 os.chdir('/local/home/jsahewal/machineLearning')
 pd.set_option('display.width', 240)
+readline.parse_and_bind('tab:complete')
 
 # Store input filenames
 train_in_file = 'train.csv'
